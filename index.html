@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<style type="text/css">
+	
+</style>
+<body>
+	<div class="hero">
+		<div class="nav-bar">
+			<div class="nav-logo">
+				<img src="back.jpg">
+			</div>
+		    <div class="nav-link">
+		    	<ul>
+		    		<a href="#"><li>Home</li></a>
+		    		<a href="skills.html"><li>Skills</li></a>
+		    		<a href="#"><li>Home</li></a>
+		    	</ul>
+		    </div>
+		</div>
+		<div class="title">
+			<h1>Iam a fullstack developer</h1>
+			<button class="btn">explore</button>
+		</div>
+		<div class="bar">
+			<button onclick="itemshow()"><i class="fas fa-bars" style="color: white" ></i></button>
+			<div class="item" id="item">
+				<button onclick="itemhide()" ><i class="fas fa-times"></i></button>
+				<ul>
+		    		<a href="#"><li>Home</li></a>
+		    		<a href="#"><li>Home</li></a>
+		    		<a href="#"><li>Home</li></a>
+		    	</ul>
+			</div>
+		</div>
+		
+		
+	</div>
+
+	<script type="text/javascript">
+		function itemshow(){
+			var item =document.getElementById("item");
+			item.style.display="block";
+		}
+		function itemhide(){
+			var item =document.getElementById("item");
+			item.style.display="none";
+		}
+	</script>
+</body>
+</html>
